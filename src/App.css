@@ -1,0 +1,87 @@
+body {
+  background-color: #faf7eb ;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Custom gold colour buttons */
+.btn-gold {
+  background-color: #c39b62;
+  color: white;
+  border-radius: 0;
+}
+
+/* Navbar style for smaller screens */
+
+@media screen and (max-width: 992px) {
+  #logo {
+    width: 100px;
+    margin-right: auto;
+    /* flex-shrink: 3; */
+  }
+  #nav {
+    justify-content: flex-start;
+  }
+  #btn-check-rates {
+    margin-left: 0px;   
+  }
+}
+
+/* Navbar button style */
+
+#btn-check-rates {
+ 
+  margin-right: 0px;
+}
+
+/* Custom container for gallery slider - max width above medium sized screens, and 80% width below */
+
+.gallery-container {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .gallery-container {
+      width: 80%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+}
+
